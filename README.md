@@ -70,9 +70,7 @@ This file is in .gitignore so you need to put the enviroment variable on vercel
 
 <h2>open issues</h2>
 <ul>
-<li>for some reason i get a warning . not clear why but it is working
-<p>[next-auth][warn][NO_SECRET] 
-https://next-auth.js.org/warnings#no_secret</p>
-</li>
-<li>going to production i had error for sign in</li>
+<li>i had warning on no sercret on development which crash the server so add NEXTAUTH_SECRET using a value from <a href='https://generate-secret.vercel.app/32'>here</a></li>
+<li>i had warning on no url on development which crash the server so add NEXTAUTH_URL = http://localhost:3000/ on developemnt and not on production because i all ready set it in github </li>
+<li>at the end i got server error not clear why</li>
 </ul>
