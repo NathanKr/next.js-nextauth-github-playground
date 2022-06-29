@@ -62,3 +62,16 @@ the auth data appears in a cookie. this cookie is removed after sign out
 info from useSession
 
 ![info from useSession](./figs/useSession-info.png)
+
+
+<h2>.env.local on production</h2>
+This file is in .gitignore so you need to put the enviroment variable on vercel
+
+
+<h2>open issues</h2>
+<ul>
+<li>for some reason i get a warning . not clear why but it is working
+<p>[next-auth][warn][NO_SECRET] 
+https://next-auth.js.org/warnings#no_secret</p>
+</li>
+</ul>
