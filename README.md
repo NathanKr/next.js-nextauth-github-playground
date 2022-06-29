@@ -1,5 +1,5 @@
 <h2>Motivation</h2>
-Experiment with authentication in next.js via NextAuth and Github as OAuth provider
+Experiment with authentication in next.js via NextAuth and Github as OAuth provider. i use simple signin \ signout
 
 <h2>Points of interest</h2>
 <ul>
@@ -74,4 +74,5 @@ This file is in .gitignore so you need to put the enviroment variable on vercel
 <p>[next-auth][warn][NO_SECRET] 
 https://next-auth.js.org/warnings#no_secret</p>
 </li>
+<li>going to production i had error for sign in</li>
 </ul>
