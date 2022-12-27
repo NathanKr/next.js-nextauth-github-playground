@@ -66,7 +66,7 @@ info from useSession
 
 <h2>.env.local on production</h2>
 This file is in .gitignore so you need to put the enviroment variable on vercel
-
+ 
 
 <h2>open issues</h2>
 <ul>
