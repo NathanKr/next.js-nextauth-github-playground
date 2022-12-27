@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       <button onClick={() => signIn("github")}>SignIn</button>
       <button onClick={() => signOut()}>SignOut</button>
       <p>{status === "authenticated" ? 'signin' : 'signout'}</p>
+      {status === "authenticated" ? <p>{session.user?.email} , {session.user?.name} </p> : ''}
     </div>
   );
 };
