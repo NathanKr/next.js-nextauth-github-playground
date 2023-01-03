@@ -72,5 +72,11 @@ This file is in .gitignore so you need to put the enviroment variable on vercel
 <ul>
 <li>i had warning on no sercret on development which crash the server so add NEXTAUTH_SECRET using a value from <a href='https://generate-secret.vercel.app/32'>here</a></li>
 <li>i had warning on no url on development which crash the server so add NEXTAUTH_URL = http://localhost:3000/ on developemnt and not on production because i all ready set it in github </li>
-<li>at the end i got  server error not clear why</li>
+<li>at the end i got server error 'Firefox can’t establish a connection to the server at localhost:3000.' not clear why. i did the following with NEXTAUTH_URL on production but nothing helps
+<ul>
+<li>remove it from environment setting</li>
+<li>set in to https://next-js-nextauth-playground.vercel.app/</li>
+<li>set in to http://127.0.0.1:3000 (check <a href='http://127.0.0.1:3000'>here</a> )
+</ul>
+</li>
 </ul>
