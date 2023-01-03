@@ -6,6 +6,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     .status(200)
     .json({
       NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
-      NEXTAUTH_URL: process.env.NEXTAUTH_URL,
+      NEXTAUTH_URL: process.env.NEXTAUTH_URL
     });
 }
