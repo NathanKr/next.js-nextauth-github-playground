@@ -10,10 +10,17 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <button onClick={() => signIn("github")}>SignIn</button>
-      <button onClick={() => signOut()}>SignOut</button>
-      <p>{status === "authenticated" ? 'signin' : 'signout'}</p>
-      {status === "authenticated" ? <p>{session.user?.email} , {session.user?.name} </p> : ''}
+      {status === "authenticated" ? (
+        <button onClick={() => signOut()}>SignOut</button>
+      ) : (
+        <button onClick={() => signIn("github")}>SignIn</button>
+      )}
+      <p>{status === "authenticated" ? "signed in" : "signed out"}</p>
+      {status === "authenticated" && (
+        <p>
+          {session.user?.email} , {session.user?.name}{" "}
+        </p>
+      )}
     </div>
   );
 };
